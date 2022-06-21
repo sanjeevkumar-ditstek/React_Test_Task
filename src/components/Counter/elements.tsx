@@ -7,6 +7,10 @@ export const CounterWrapper = styled.div`
   width: 390px;
   height: 90vh;
   background-color: #004761;
+
+  @media screen and (max-width: 480px) {
+    height: 100vh;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`
