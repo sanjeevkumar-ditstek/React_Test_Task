@@ -11,9 +11,11 @@ const Counter: FC = () => {
     <Box>
       <CounterWrapper>
         <ButtonsWrapper>
-          <Button onClick={() => dispatch(increment())}>+1</Button>
-          <Count >{count}</Count>
-          <Button onClick={() => dispatch(decrement())}>-1</Button>
+          <Button title="increment" onClick={() => dispatch(increment())}>
+            +1
+          </Button>
+          <Count title="count" >{count}</Count>
+          <Button title="decrement" onClick={() => dispatch(decrement())}>-1</Button>
         </ButtonsWrapper>
       </CounterWrapper>
     </Box>
